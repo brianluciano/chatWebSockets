@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "This repository has a chat that use web sockets",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "dev": "node --watch ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
