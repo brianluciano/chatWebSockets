@@ -1,0 +1,65 @@
+:root {
+    color-scheme: dark;
+}
+
+body {
+   display: grid;
+   place-content: center;
+   height: 100vh;
+   padding: 36px 36px 100px 36px;
+   grid-template-rows: 1fr;
+}
+
+#chat {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 350px;
+    height: 550px;
+    position: relative;
+}
+#form {
+    bottom: 0;
+    display: flex;
+    height: 48px;
+    left: 0;
+    padding: 4px;
+    position: absolute;
+    right: 0;
+}
+
+#messages { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    height: 100%;
+    scroll-behavior: smooth;
+    padding-bottom: 48px;
+    position: relative;
+}
+
+#messages>li {
+    padding: .5rem 1rem;
+}
+#messages>li:nth-child(odd) { 
+    background: #000;
+}
+
+#input {
+    border-radius: 9999px;
+    border: 1px solid #eee;
+    flex: 1;
+    margin: 4px;
+    padding: 0 8px;
+}
+#input:focus {
+    outline: 0;
+}
+#form > button {
+    background: #09f;
+    color: #fff;
+    border: 0;
+    margin: 4px;
+    border-radius: 4px;
+}
